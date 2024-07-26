@@ -31,7 +31,7 @@ DataFrame rep_crawl_delays(SEXP xp) {
   agents.reserve(ptr->agents_.size());
   vals.reserve(ptr->agents_.size());
 
-  for(auto kv : ptr->agents_) {
+  for(const auto& kv : ptr->agents_) {
     agents.push_back(kv.first);
     vals.push_back(kv.second.delay());
   }
