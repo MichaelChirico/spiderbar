@@ -341,7 +341,7 @@ namespace Url
         while(true)
         {
             std::string segment = hostname.substr(start, end - start);
-            if (segment.substr(0, 4).compare("xn--") == 0)
+            if (segment.substr(0, 4) == "xn--")
             {
                 segment = segment.substr(4);
                 unencoded.append(Punycode::decode(segment));
