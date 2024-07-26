@@ -94,7 +94,7 @@ namespace Url
          * Add the provided host with the provided priority, trimming characters off
          * the front, and adjusting the level by the provided number.
          */
-        void add(std::string& host, int level_adjust, size_t trim);
+        void add(std::string& rule, int level_adjust, size_t trim);
     };
 
 }
